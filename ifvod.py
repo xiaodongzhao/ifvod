@@ -124,3 +124,5 @@ if __name__ == "__main__":
         client.download_playlist(url)
     elif "ifvod.tv/play?" in url:
         client.download_video(os.getcwd(), url)
+    else:
+        print(f"don't know how to handle {url}")
